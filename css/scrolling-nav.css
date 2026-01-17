@@ -303,7 +303,7 @@ section img {
 
   section h2,
   section p {
-    text-align: center;
+    text-align: left;
     padding: 10px 15px;
   }
 
@@ -379,7 +379,7 @@ section img {
 
   section h2,
   section p {
-    text-align: center;
+    text-align: left;
     padding: 8px 12px;
   }
 
