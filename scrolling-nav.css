@@ -1,0 +1,143 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+header {
+  padding: 0px 100px;
+  font-family: "Montserrat Medium";
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px;
+  }
+}
+
+/*@font-face {
+    font-family: 'Montserrat Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat Medium'), url('Montserrat-Medium.woff') format('woff');
+    }*/
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.league-spartan-<uniquifier> {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+
+
+
+h1{
+font-family: "League Spartan", sans-serif;
+font-size:3em;
+font-style: normal;
+font-weight: bold;
+color: white;
+}
+
+h2
+{
+font-family: "League Spartan", sans-serif;
+font-size: 2.5em;
+
+}
+
+h3{
+  font-family: "Montserrat";
+  font-size: 1.25em;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+nav {
+  background-color: #28891f;
+}
+
+header {
+  background-image: url("../map.jpg");
+  color: #000;
+}
+
+section {
+  padding:240px 0 30px 30px;
+  height: 585px;
+}
+
+
+
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+  margin-right: 80px;
+  float: right;
+
+}
+
+footer { 
+  padding-top: 20px;
+  position: ;
+}
+
+.center{
+margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-item{
+  font-family: "Montserrat";
+}
+
+
+.gold-bg {
+  background-color: rgba(100, 109, 99, .10);
+}
+
+#header{
+  background: rgba(32, 100, 26, 0.8);
+  padding: 40px;
+  width: 40%;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
