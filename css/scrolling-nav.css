@@ -51,7 +51,7 @@ p{
 
 h1{
 font-family: "League Spartan", sans-serif;
-font-size:3em;
+font-size: clamp(1.75rem, 5vw, 3em);
 font-style: normal;
 font-weight: bold;
 color: white;
@@ -60,13 +60,18 @@ color: white;
 h2
 {
 font-family: "League Spartan", sans-serif;
-font-size: 2.5em;
+font-size: clamp(1.5rem, 4vw, 2.5em);
 
 }
 
 h3{
   font-family: "Montserrat";
-  font-size: 1.25em;
+  font-size: clamp(1rem, 2.5vw, 1.25em);
+}
+
+p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
 }
 
 input[type=text], select, textarea {
@@ -91,8 +96,68 @@ header {
 }
 
 section {
-  padding:240px 0 30px 30px;
-  height: 585px;
+  padding: 80px 0;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+section .container-fluid {
+  max-width: 1400px;
+  padding: 0 50px;
+}
+
+section p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  max-width: 100%;
+  word-wrap: break-word;
+  padding: 0 20px;
+}
+
+section h2 {
+  padding: 0 20px;
+}
+
+section .section-image {
+  max-height: 500px;
+  width: auto;
+  border: 5px solid #20641A;
+  padding: 0;
+}
+
+section .section-image-logo {
+  max-height: 450px;
+  width: auto;
+}
+
+#section5 {
+  padding: 60px 0;
+  min-height: auto;
+}
+
+#section5 .container {
+  max-width: 800px;
+  text-align: left;
+  padding: 40px;
+  padding-left: 40px;
+}
+
+#section5 h2 {
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: left;
+}
+
+#section5 h3 {
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: left;
+}
+
+#section5 p {
+  margin-bottom: 15px;
+  padding: 0;
+  text-align: left;
 }
 
 
@@ -131,6 +196,232 @@ margin-left: auto;
   padding: 40px;
   width: 40%;
   color: white;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Make all section images responsive */
+section img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/* Tablets (768px to 991px) */
+@media (max-width: 991px) {
+  header {
+    padding: 120px 50px 80px;
+  }
+
+  #header {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 2.5em);
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2em);
+  }
+
+  h3 {
+    font-size: clamp(1rem, 2vw, 1.15em);
+  }
+
+  p {
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+  }
+
+  section {
+    padding: 60px 0;
+    min-height: 400px;
+  }
+
+  section .container-fluid {
+    padding: 0 30px;
+  }
+
+  section .section-image {
+    max-height: 400px;
+  }
+
+  section .section-image-logo {
+    max-height: 350px;
+  }
+
+  .container2 {
+    width: 70%;
+    margin-right: 40px;
+  }
+}
+
+/* Mobile Landscape (576px to 767px) */
+@media (max-width: 767px) {
+  header {
+    padding: 100px 30px 60px;
+  }
+
+  #header {
+    width: 85%;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: clamp(1.6rem, 5vw, 2em);
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 4vw, 1.75em);
+  }
+
+  h3 {
+    font-size: clamp(0.95rem, 2.5vw, 1.1em);
+  }
+
+  p {
+    font-size: clamp(0.85rem, 2vw, 0.95rem);
+  }
+
+  section {
+    padding: 50px 0;
+    min-height: auto;
+  }
+
+  section .container-fluid {
+    padding: 0 20px;
+  }
+
+  section .row {
+    margin-bottom: 20px;
+  }
+
+  section .section-image,
+  section .section-image-logo {
+    max-height: 350px;
+    margin: 20px auto;
+  }
+
+  section h2,
+  section p {
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  .container2 {
+    width: 90%;
+    float: none;
+    margin: 20px auto;
+  }
+
+  footer table {
+    width: 100%;
+  }
+
+  footer th {
+    padding: 10px 5px;
+  }
+
+  footer img {
+    height: 40px !important;
+    margin: 0 20px !important;
+  }
+}
+
+/* Mobile Portrait (up to 575px) */
+@media (max-width: 575px) {
+  header {
+    padding: 90px 15px 50px;
+  }
+
+  header .lead {
+    font-size: clamp(0.85rem, 3vw, 1rem);
+  }
+
+  #header {
+    width: 95%;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: clamp(1.4rem, 6vw, 1.75em);
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: clamp(1.25rem, 5vw, 1.5em);
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: clamp(0.9rem, 3vw, 1em);
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: clamp(0.8rem, 2.5vw, 0.95em);
+    line-height: 1.5;
+  }
+
+  section {
+    padding: 40px 0;
+    min-height: auto;
+  }
+
+  section .container-fluid {
+    padding: 0 15px;
+  }
+
+  section .section-image,
+  section .section-image-logo {
+    max-height: 300px;
+    margin: 15px auto;
+  }
+
+  section h2,
+  section p {
+    text-align: center;
+    padding: 8px 12px;
+  }
+
+  .container2 {
+    width: 95%;
+    float: none;
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .navbar-brand img {
+    height: 45px !important;
+  }
+
+  footer {
+    padding: 10px 5px;
+  }
+
+  footer table {
+    width: 100%;
+  }
+
+  footer th {
+    padding: 5px;
+  }
+
+  footer img {
+    height: 35px !important;
+    margin: 0 15px !important;
+  }
+
+  #section5 .container {
+    padding: 20px;
+    padding-left: 20px;
+  }
+
+  #section5 h2,
+  #section5 h3,
+  #section5 p {
+    text-align: left;
+    padding: 0 !important;
+  }
 }
 
 
